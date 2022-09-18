@@ -104,7 +104,6 @@ section p {
 
 }
 
-
 @media  only screen and (max-width: 990px) {
     
     main{
@@ -133,28 +132,9 @@ section p {
 
 
 @media  only screen and (max-width: 600px) {
-    header{
-       
-        height: 100px;
-        max-width: 370px;
-        width: 100%;
-        margin-top: 32px;
-    }
-    header div{
-        width: 100px;
-        margin: 0 auto;
-        background: linear-gradient(90deg, rgba(132,14,255,1) 32%, rgba(28,53,185,1) 55%, rgba(2,0,36,1) 90%);
-        border-radius: 50%;
-    
-        display: flex;
-        padding: 5px;
-    
-        transition: transform .3s;
-    
-    }
-    
+
     main{
-        max-width: 250px;
+        max-width: 450px;
         width: 90%;
         margin: 0 auto;
     
@@ -164,7 +144,7 @@ section p {
     }
 
     section{
-        max-width: 200px;
+        max-width: 400px;
         color: #fff;
         line-height: 140%;
         margin-right: 20px;
@@ -175,39 +155,21 @@ section p {
         border-radius: 10px;
     
     }
-    section div{
-        background-color: #2a2634;
-        padding: 32px;
-        padding-top: 24px;
-        border-radius: 8px;
-    
-        text-align: center;
-    }
     section h2 {
-        font-weight: 900;
-        font-size: 12px;
-        letter-spacing: -0.47px;
+        font-size: 16px;
     }
     
     section p {
-        letter-spacing: -0.18px;
-        font-size: 10px;
-        color: #a1a1aa;
-    
+        font-size: 12px;    
     }
 
-    ul{
-        padding-left: 0 !important;
-    }
 
     .btn-lg{
-        max-width: 100px;
-        font-size: 8px;
-        padding: 4px 8px
+        max-width: 200px;
+        font-size: 12px;
     }
     .btn-lg{
-        font-size: 10px !important;
-        padding: 4px 8px  !important;
+        font-size: 14px !important;
     }
     
     
@@ -234,6 +196,10 @@ section ul li{
 
 section ul li:hover{
     transform: scale(1.1);
+}
+
+ul{
+    padding-left: 0 !important;
 }
 /* Animation */
 header div{
