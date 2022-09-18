@@ -72,14 +72,6 @@ main{
     margin-top: 32px;
 }
 
-main span{
-    font-size: 12px;
-    font-weight: bolder;
-    text-align: center;
-
-    color: rgb(39, 39, 39);
-}
-
 /* Section getais */
 section{
     color: #fff;
