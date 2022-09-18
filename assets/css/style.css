@@ -9,7 +9,6 @@ body{
     background-image: url(../images/Fundo.png);
     background-position: top center;
     background-color: #121214;
-    overflow-x: hidden;
 
 }
 
@@ -65,7 +64,7 @@ header img{
 main{
     max-width: 580px;
     width: 90%;
-    margin: 32px auto;
+    margin: 0 auto;
 
     display: grid;
     gap: 24px;
@@ -105,18 +104,40 @@ section p {
 
 }
 
-@media  screen and (max-width: 450px) {
-    main{
-    max-width: 400px;
-    width: 90%;
-    margin: 32px auto;
 
-    display: grid;
-    gap: 24px;
-    margin-top: 32px;
-}
+@media  only screen and (max-width: 600px) {
+    header{
+       
+        height: 100px;
+        max-width: 370px;
+        width: 100%;
+        margin-top: 32px;
+    }
+    header div{
+        width: 100px;
+        margin: 0 auto;
+        background: linear-gradient(90deg, rgba(132,14,255,1) 32%, rgba(28,53,185,1) 55%, rgba(2,0,36,1) 90%);
+        border-radius: 50%;
+    
+        display: flex;
+        padding: 5px;
+    
+        transition: transform .3s;
+    
+    }
+    
+    main{
+        max-width: 250px;
+        width: 90%;
+        margin: 0 auto;
+    
+        display: grid;
+        gap: 24px;
+        margin-top: 32px;
+    }
+
     section{
-        max-width: 400px;
+        max-width: 200px;
         color: #fff;
         line-height: 140%;
         margin-right: 20px;
@@ -137,23 +158,33 @@ section p {
     }
     section h2 {
         font-weight: 900;
-        font-size: 24px;
+        font-size: 12px;
         letter-spacing: -0.47px;
     }
     
     section p {
         letter-spacing: -0.18px;
-        font-size: 16px;
+        font-size: 10px;
         color: #a1a1aa;
     
     }
 
-    .btn {
-        width: 100px;
+    ul{
+        padding-left: 0 !important;
+    }
+
+    .btn-lg{
+        max-width: 100px;
+        font-size: 8px;
+        padding: 4px 8px
+    }
+    .btn-lg{
+        font-size: 10px !important;
+        padding: 4px 8px  !important;
     }
     
-
-}
+    
+    }
 
 /* Lista */
 section ul{
@@ -161,7 +192,6 @@ section ul{
     position: relative;
     display: inline-grid;
     justify-content: center;
-   
     
     margin: auto;
 }
@@ -178,11 +208,6 @@ section ul li{
 section ul li:hover{
     transform: scale(1.1);
 }
-
-ul{
-    padding-left:0;
-}
-
 /* Animation */
 header div{
     animation: fromTop .7s .2s backwards;
