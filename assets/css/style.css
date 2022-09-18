@@ -1,0 +1,221 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/Fundo.png);
+    background-position: top center;
+    background-color: #121214;
+
+}
+
+body *{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+/* WPP img */
+.fixed-bottom {
+    right: 20px;
+    bottom: 20px;
+    left: 0;
+  }
+
+  .text-right {
+    text-align: right !important;
+  }
+  
+.icon-fab{
+    font-size:300%;     
+}
+  
+/* Header */
+header{
+    margin-top: 32px;
+    height: cal(120px + 32px);
+    
+}
+header div{
+    width: 120px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(132,14,255,1) 32%, rgba(28,53,185,1) 55%, rgba(2,0,36,1) 90%);
+    border-radius: 50%;
+
+    display: flex;
+    padding: 5px;
+
+    transition: transform .3s;
+
+}
+
+header div:hover{
+    transform: scale(1.1)
+
+}
+header img{
+    width: 100%;
+    border-radius: 50px;
+
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+main span{
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+
+    color: rgb(39, 39, 39);
+}
+
+/* Section getais */
+section{
+    color: #fff;
+    line-height: 160%;
+
+    background: linear-gradient(90deg, rgba(132,14,255,1) 32%, rgba(28,53,185,1) 55%, rgba(2,0,36,1) 90%);
+    /* background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%); */
+    padding-top: 4px;
+
+    border-radius: 10px;
+
+}
+section div{
+    background-color: #2a2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+
+    text-align: center;
+}
+section h2 {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    font-size: 16px;
+    color: #a1a1aa;
+
+}
+
+@media  screen and (max-width: 450px) {
+    section{
+        max-width: 400px;
+        color: #fff;
+        line-height: 140%;
+        margin-right: 20px;
+        background: linear-gradient(90deg, rgba(132,14,255,1) 32%, rgba(28,53,185,1) 55%, rgba(2,0,36,1) 90%);
+        /* background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%); */
+        padding-top: 2px;
+    
+        border-radius: 10px;
+    
+    }
+    section div{
+        background-color: #2a2634;
+        padding: 32px;
+        padding-top: 24px;
+        border-radius: 8px;
+    
+        text-align: center;
+    }
+    section h2 {
+        font-weight: 900;
+        font-size: 24px;
+        letter-spacing: -0.47px;
+    }
+    
+    section p {
+        letter-spacing: -0.18px;
+        font-size: 16px;
+        color: #a1a1aa;
+    
+    }
+
+    .btn {
+        width: 100px;
+    }
+    
+
+}
+
+/* Lista */
+section ul{
+    list-style: none;
+    position: relative;
+    display: inline-grid;
+    justify-content: center;
+    
+    margin: auto;
+}
+.btn {
+    width: 300px;
+}
+section ul li{
+    margin-bottom: 16px;
+    text-align: center;
+
+    transition: transform .3s;
+}
+
+section ul li:hover{
+    transform: scale(1.1);
+}
+/* Animation */
+header div{
+    animation: fromTop .7s .2s backwards;
+}
+
+main section{
+    animation:  ToTop .7s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+main section:nth-child(2){
+    animation-delay: .4;
+}
+main section:nth-child(3){
+    animation-delay: .8;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);   
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ToTop {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);   
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+
+}
