@@ -18,9 +18,9 @@ body *{
 }
 
 /* WPP img */
-.fixed-bottom {
-    right: 20px;
-    bottom: 20px;
+.fixo-bottom {
+    position: fixed;
+    right: 0;
     left: 0;
   }
 
