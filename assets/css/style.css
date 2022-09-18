@@ -9,6 +9,7 @@ body{
     background-image: url(../images/Fundo.png);
     background-position: top center;
     background-color: #121214;
+    overflow-x: hidden
 
 }
 
